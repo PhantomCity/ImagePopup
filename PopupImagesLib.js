@@ -6,4 +6,9 @@
 // @icon http://findicons.com/icon/download/131805/image/48/png
 // ==/UserScript==
 
-//alert('Library loaded!');
+var win = unsafewindow;
+
+if (!win.PSVScript_IPHandlers)
+{
+  win.PSVScript_IPHandlers = new Array();
+}
