@@ -2,7 +2,7 @@
 // @name Show Image Popup Library
 // @namespace PSVScripts
 // @description Библиотека функций PopupImage
-// @version 0.0.0.5
+// @version 0.0.0.6
 // ==/UserScript==
 
 /*
