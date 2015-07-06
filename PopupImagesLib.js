@@ -21,14 +21,14 @@ var win = unsafewindow;
 if (!win.PSVScript_IPHandlers)
   win.PSVScript_IPHandlers = new Array();
 
-var handlers = win.PSVScript_IPHandlers;
+var PsvHandlers = win.PSVScript_IPHandlers;
 
 if (!win.PSVScript_IPHandler)
   win.PSVScript_IPHandler = PSVScript_IPHandler;
 
 function PSVScript_IPHandler(SourceObject, CB, ImageUrl)
 {
-  for (var i=0; i< handlers.length; i++)
-  if (handlers[i](SourceObject, CB, ImageUrl))
+  for (var i=0; i< PsvHandlers.length; i++)
+  if (PsvHandlers[i](SourceObject, CB, ImageUrl))
     break;
 }
